@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  width: 1214px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.site-header {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 18px;
+  border-bottom: 6px solid #c9eefb;
+}
+
+.site-header__top {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 52px;
+}
+
+.logo img{
+  vertical-align: top;
+
+}
+
+.logo ~ * {
+  margin-bottom: 8px;
+}
+.social {
+  display: flex;
+
+}
+
+.phone {
+  margin-left: auto;
+}
+
+
+.social {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 0;
+}
+.social a{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.social svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+.site-nav {
+  margin-bottom: 50px;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+
+}
+
+.site-nav li {
+  flex-grow: 1;
+}
+
+.site-nav svg {
+  width: 34px;
+  height: 34px;
+  float: left;
+  margin-right: 8px;
+}
+
+.site-nav svg ~ * {
+  overflow: hidden;
+}
+
+.site-nav a {
+  overflow: hidden;
+}
+
+.search input{
+  width: 0;
+  border: none;
+  transition:  .3s;
+}
+
+.search svg {
+  width: 27px;
+  height: 22px;
+}
+
+.search input:not(:placeholder-shown),
+.search input:focus {
+  width: 150px;
+  visibility: visible;
+  border: 1px solid #ddd;
+}
+
+
+.slide {
+  min-height: 450px;
+  position: relative;
+  background-image: url('../img/slide-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.slide > * {
+  position: relative;
+  z-index: 1;
+}
+
+.slide::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(38, 189, 239, 0.95);
+}
+
+.slick-next {
+  right: 26px;
+}
+
+.slick-prev {
+  left: 26px;
+}
+
+.slick-next::before {
+  background-image: url('../img/right-arrow.svg');
+}
+
+.slick-prev::before {
+  background-image: url('../img/left-arrow.svg');
+}
+
+.slick-next::before,
+.slick-prev::before {
+  content: '';
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+}
+
+.slick-next,
+.slick-prev {
+  width: 65px;
+  height: 65px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 10;
+}
+
+
+
